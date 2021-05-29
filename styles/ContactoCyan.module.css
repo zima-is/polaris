@@ -1,0 +1,130 @@
+.fullWidth {
+    width: 100%;
+    /*max-width: 1080px;*/
+
+    /*padding: 23px;*/
+
+    background-color: #86b5d6;
+    /*position: absolute;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-color: rgba(134, 181, 214, .3);
+
+    margin-top: 23px;*/
+
+}
+.spanNavy {
+    color: #113159 !important;
+}
+.wrapperGrid {
+    width: fit-content;
+    max-width: 1080px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "star"
+        "phone"
+        "mail"
+    ;
+
+    margin: 46px auto;
+}
+.phone, .mail {
+    margin: 0 23px 23px 23px;
+}
+.star {
+    margin: 0 auto 46px auto;
+}
+
+/******************* PHONE ******************/
+.phone {
+    grid-area: phone;
+}
+.phone p {
+    text-align: center;
+    line-height: 1.75rem;
+    color: #fff;
+
+    margin: 0px;
+}
+.phoneLink {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #113159 !important;
+}
+.phoneLink a svg {
+    font-size: 1.5rem;
+    margin: 0px 10px 3px 0px;
+}
+.phone p:first-of-type {
+    margin-bottom: 8px;
+}
+
+/******************** MAIL *******************/
+.mail {
+    grid-area: mail;
+}
+.mail p {
+    max-width: 290px;
+
+    text-align: center;
+    line-height: 1.75rem;
+    color: #fff;
+
+    margin: 0px;
+}
+
+/******************** STAR *******************/
+.star {
+    grid-area: star;
+}
+
+/****************************************************************
+************************* MEDIA QUERIES *************************
+*****************************************************************/
+@media (min-width: 775px) {
+    .wrapperGrid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "star star"
+            "phone mail"
+        ;
+    }
+    .phone p {
+        text-align: end;
+    }
+    .mail p {
+        max-width: 355px;
+        text-align: left;
+    }
+}
+@media (min-width: 1080px) {
+    .wrapperGrid {
+        width: 100%;
+        grid-template-columns: 1fr 420px 1fr;
+        grid-template-areas: 
+            "phone mail star"
+        ;
+    }
+    .phone, .mail, .star {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 23px;
+        margin: 0px;
+    }
+    .star {
+        margin: 0px auto;
+    }
+}
+
+

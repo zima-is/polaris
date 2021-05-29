@@ -1,0 +1,14 @@
+.postsContainer {
+    width: 100%;
+    max-width: 1080px;
+
+    padding: 23px;
+    margin: 77px auto;
+}
+.postsWrapper {
+    list-style: none;    
+    padding-inline-start: 0px;
+}
+.postCard~.postCard {
+    margin-top: 50px;
+}

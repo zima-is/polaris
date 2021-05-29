@@ -1,0 +1,219 @@
+.container {
+    width: 100%;
+    max-width: 1080px;
+
+    padding: 23px;
+}
+.fullWidth {
+    width: 100%;
+    background-color: #113159;
+
+    padding: 0px 23px;
+}
+.headerIntro {
+    max-width: 620px;
+
+    margin: 50px auto;
+}
+.headerIntro h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #113159;
+    margin: 0px;
+}
+
+.spanCyan {
+    color: #86b5d6;
+}
+
+/* BENEFICIOS DEL PLAN DE IGUALDAD (GRID) */
+.h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+
+    margin: 50px auto 35px auto;
+}
+.igualdadGrid {
+    width: fit-content;
+
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    grid-template-areas: 
+        "ck-first first"
+        "ck-second second"
+        "ck-third third"
+        "ck-fourth fourth"
+        "ck-fifth fifth"
+        "ck-sixth sixth"
+    ;
+    margin: 0px auto 50px auto;
+}
+.igualdadGrid p {
+    color: #fff;
+    margin: 0px 0px 12px 12px;
+}
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.check svg {
+    color: #86b5d6;
+}
+.firstCheck {
+    grid-area: ck-first;
+}
+.first {
+    grid-area: first;
+}
+.secondCheck {
+    grid-area: ck-second;
+}
+.second {
+    grid-area: second;
+}
+.thirdCheck {
+    grid-area: ck-third;
+}
+.third {
+    grid-area: third;
+}
+.fourthCheck {
+    grid-area: ck-fourth;
+}
+.fourth {
+    grid-area: fourth;
+}
+.fifthCheck {
+    grid-area: ck-fifth;
+}
+.fifth {
+    grid-area: fifth;
+}
+.sixthCheck {
+    grid-area: ck-sixth;
+}
+.sixth {
+    grid-area: sixth;
+}
+
+/* PACKS PLANES DE IGUALDAD */
+.packsIgualdadWrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 52px auto;
+}
+.card {
+    max-width: 415px;
+
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 45%);
+
+    margin: 23px 0px;
+}
+
+/****************** HEADER *****************/
+.cardHeader {
+    background-color: #113159;
+}
+.cardHeader h2 {
+    text-align: center;
+    color:  #fff;
+
+    padding: 23px;
+    margin: 0px auto;
+}
+
+/***************** CONTENT ****************/
+.cardContent {
+    min-height: 475px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+
+    padding: 23px 23px 46px 23px;
+}
+.price {
+    color: #113159;
+    text-align: center;
+    line-height: 1.75rem;
+
+    margin: 12px 0px;
+}
+.price span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text {
+    margin: 32px auto 32px auto;
+}
+.text p {
+    color: #113159;
+    margin: 8px 0px;
+}
+.text p svg {
+    margin-right: 8px;
+}
+.text p svg path {
+    fill: #86b5d6;
+}
+.linkPack {
+    width: fit-content;
+
+    font-weight: 500;
+    line-height: 1.75rem;
+
+    color: #fff;
+    background-color: #113159;
+    border-radius: 3px;
+
+    padding: 8px 16px;
+    margin: auto auto 0px auto;
+}
+.linkPack:hover {
+    background-color: #86b5d6;
+}
+.styleBar {
+    height: 23px;
+
+    background-color: #86b5d6;
+}
+
+
+
+
+
+
+/****************************************************************
+************************* MEDIA QUERIES *************************
+*****************************************************************/
+@media (min-width: 300px) {
+    .h2 {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 360px) {
+    .headerIntro h1, .headerIntro h2 {
+        font-size: 1.3rem;
+    }    
+}
+@media (min-width: 520px) {
+    .card {
+        margin: 23px;
+    }
+}
+@media (min-width: 1038px) {
+
+}

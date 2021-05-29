@@ -1,0 +1,172 @@
+.gridContainer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "infoWrapper"
+        "formWrapper"
+    ;
+}
+.bolder {
+    font-weight: 700;
+}
+/******************* INFO ******************/
+.infoWrapper {
+    grid-area: infoWrapper;
+}
+.illustration {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+}
+
+.info {
+    max-width: 410px;
+
+    padding: 23px;
+    margin: 50px auto;
+}
+.info h1 {
+    font-size: 1.3rem;
+    color: #113159;
+
+    margin: 0px;
+    margin-top: 32px;
+}
+.info p {
+    line-height: 1.75rem;
+    color: #113159;
+
+    margin: 23px auto;
+}
+.info p:first-of-type {
+    margin-top: 8px;
+}
+.phoneLink {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #113159 !important;
+
+    margin-bottom: 32px !important;
+}
+.phoneLink a svg {
+    font-size: 1.5rem;
+    margin: 0px 10px 3px 0px;
+}
+
+
+/******************* FORM ******************/
+.formWrapper {
+    grid-area: formWrapper;
+
+    background-color: #86b5d6;
+}
+.form {
+    max-width: 520px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 23px;
+    margin: 50px auto;
+}
+.name, .email, .message {
+    font-size: .85rem;
+    font-weight: 700;
+    color: #113159;
+
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+.name {
+    margin-top: 0px;;
+}
+
+.nameInput, .emailInput {
+    width: 100%;
+    height: 32px;
+
+    border: none;
+
+    padding-left: 8px;
+}
+
+.messageTextArea {
+    width: 100%;
+    height: 180px;
+
+    border: none;
+
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.checkboxDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.subscriptionsInput, .conditionsInput {
+    border: none;
+}
+.subscription, .conditions {
+    font-size: .85rem;
+    color: #113159;
+}
+
+
+.form button {
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: #fff;
+    background-color: #113159;
+    border: none;
+    border-radius: 3px;
+
+    padding: 8px 25px;
+    margin: 16px 0px;
+}
+
+.legal {
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.35rem;
+    color: #fff;
+
+    margin: 0px auto;
+}
+
+
+
+
+
+/****************************************************************
+************************* MEDIA QUERIES *************************
+*****************************************************************/
+@media (min-width: 475px) {
+    .nameInput, .emailInput {
+        max-width: 225px;
+    }
+}
+@media (min-width: 920px) {
+    .gridContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "infoWrapper formWrapper"
+        ;
+    }
+    .info {
+        margin: 50px 50px 50px auto;
+    }
+    .form {
+        margin: 50px auto 50px 50px;
+    }
+}

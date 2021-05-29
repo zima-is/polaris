@@ -1,0 +1,38 @@
+.wrapper {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #113159;
+}
+.wrapper p {
+    font-weight: 300;
+    color: #fff;
+
+    margin: 8px 0px;
+}
+.wrapper p a {
+    display: block;
+    margin-top: 8px;
+}
+.phoneLink {
+    margin: 0px 8px;
+}
+.spanBold {
+    font-weight: 500;
+}
+
+
+/****************************************************************
+************************* MEDIA QUERIES *************************
+*****************************************************************/
+@media (min-width: 300px) {
+    .wrapper p a {
+        display: inline-block;
+        margin-top: 0px;
+    }
+}

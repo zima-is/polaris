@@ -1,0 +1,288 @@
+/****************************************************************
+*************************** MOBILE NAV **************************
+*****************************************************************/
+.header {
+    width: 100vw;
+    box-shadow: inset 0px -1px 0px #f3f3f4;
+
+    display: flex;
+    justify-content: center;
+}
+.navContainer {
+    width: 100%;
+    max-width: 1080px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: inset 0px -1px 0px #f3f3f4;
+}
+.navContainer a {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #6e6d7a;
+}
+
+.navHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;    
+
+    padding: 23px;
+}
+.logo {
+    color:rgb(23, 48, 87) !important;
+}
+
+.menuIcons {
+    cursor: pointer;
+}
+
+.navContainer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+
+    padding: 0px 23px 23px 23px;
+    margin: 0px
+}
+.navContainer ul li {
+    width: 100%;
+    padding: 12px 0px;
+}
+
+/**************************** MENU ****************************/
+.navLinksOpened {
+    display: block !important;
+}
+.navLinksClosed {
+    display: none !important;
+}
+
+
+/*************************** SUBMENU **************************/
+.hasSubmenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+.hasSubmenuOpened, .hasSubmenuClosed {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+.hasSubmenuOpened::after {
+    display: inline-block;
+    content: url('../public/caret-down.svg');
+    width: 16px;
+    height: 16px;
+
+    transform: rotate(180deg);
+
+    padding-bottom: 3px;
+    margin-left: 8px;   
+}
+.hasSubmenuClosed::after {
+    display: inline-block;
+    content: url('../public/caret-down.svg');
+    width: 16px;
+    height: 16px;
+
+    padding-top: 3px;
+    margin-left: 8px;
+}
+
+.submenu {
+    border-left: 1px solid #E7E7E9;
+
+    padding: 0px 0px 0px 23px !important;
+    margin: 23px 0px 0px 0px !important;
+
+    background-color: #fff;
+}
+.submenu li a {
+    font-weight: 300 !important;
+}
+.hidden {
+    display: none !important;
+}
+
+.newFlag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: left;
+    align-items: center;
+}
+.newFlag::after {
+    content: 'NUEVO';
+
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(23, 48, 87, .85);
+    background-color: rgba(141, 180, 212, .35);
+    border-radius: 3px;
+
+    margin-left: 8px;
+    padding: 3px 4px;
+}
+
+/****************************************************************
+************************** DESKTOP NAV **************************
+*****************************************************************/
+
+@media (min-width: 820px) {
+    .menuIcons {
+        display: none;
+    }
+    .navContainer {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .navHeader {
+        width: fit-content;
+    }
+    .navContainer > ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        padding: 0px;
+    }
+    .navContainer > ul li {
+        width: fit-content;
+        padding: 0px;
+    }
+
+    .navContainer > ul li a {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /******************** NAV HOVER *******************/
+    /*.navHeader ~ ul > li > a {
+        position: relative;
+    }
+    .navHeader ~ ul > li > a::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 6px;
+
+        background-color: rgba(23, 48, 87, .15);
+
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+
+        transition: 200ms ease;
+    }
+    .navHeader ~ ul > li:hover > a::before {
+        width: 100%;
+        right: 0px;
+        background-color: rgba(23, 48, 87, .15);
+    }*/
+
+
+    .navContainer > ul li~li {
+        margin-left: 23px;
+    }
+    .navLinksOpened, .navLinksClosed {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    /********************* SUBMENU ********************/
+    .hasSubmenuOpened, .hasSubmenuClosed {
+        width: fit-content;
+    }
+    .hasSubmenu {
+        position: relative;
+    }
+    .submenu {
+        width: 320px !important;
+        position: absolute;
+        top: 100%;
+
+        margin-top: 0px !important;
+        padding: 12px !important;
+
+        border-left: 0px;
+        box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
+        border-radius: 8px;
+
+        z-index: 1;
+    }
+    .submenu li {
+        width: 100% !important;
+        position: relative;
+        padding: 16px 18px !important;
+
+        border-radius: 8px !important;
+        
+        transition: background-color 200ms ease;
+    }
+    .submenu li:hover {
+        background-color: rgba(141, 180, 212, .15);
+    }
+    .submenu li:hover a {
+        color:rgb(23, 48, 87);
+    }
+    .submenu li a::after {
+        content: url('../public/icon-arrow-left.svg');
+        width: 12px;
+        height: 12px;
+        margin-bottom: 8px;
+
+        position: absolute;
+        right: 23px;
+
+        opacity: 0;
+
+        transition: right 200ms linear, opacity 200ms ease;
+    }
+    .submenu li:hover a::after {
+        right: 16px;
+        opacity: 1;
+    }
+    .submenu li+li {
+        margin-left: 0px !important;
+    }
+    .submenu li a {
+        font-weight: 500 !important;
+    }
+
+    /***************** CONTACT BUTTON ****************/
+    /*.contactButton {
+        height: fit-content !important;
+
+        font-weight: 500;
+        color: rgba(23, 48, 87, .85);
+        background-color: rgba(141, 180, 212, .35);
+        border-radius: 3px;
+
+        padding: 3px 4px !important;
+    }*/
+}
