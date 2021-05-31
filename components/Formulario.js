@@ -28,24 +28,24 @@ const Formulario = () => {
                         </p>
                     
                         <label htmlFor='name' value='Nombre' className={styles.name}>NOMBRE</label>
-                        <input id='name' type="text" className={styles.nameInput}/>
+                        <input id='name' name="name" type="text" className={styles.nameInput}/>
                         
                         <label htmlFor='email' value='Email' required className={styles.email}>EMAIL</label>
-                        <input id='email' type="text" className={styles.emailInput}/>
+                        <input id='email' name="email" type="email" className={styles.emailInput}/>
 
                         <label htmlFor='message' className={styles.message}>MENSAJE</label>
-                        <textarea id='message' className={styles.messageTextArea}/>
+                        <textarea id='message' name="message" className={styles.messageTextArea}/>
 
                         <div className={styles.checkboxDiv}>
                             <input type="checkbox" htmlFor='subscription' className={styles.subscriptionInput}/> 
-                            <label id='subscription' className={styles.subscription}>
+                            <label id='subscription' name="subscription" className={styles.subscription}>
                                 Deseo suscribirme al Boletín de Noticias de Polaris Data y Ágora RR.HH.
                             </label>
                         </div>
 
                         <div className={styles.checkboxDiv}>
                             <input type="checkbox" htmlFor='conditions' required className={styles.conditionsInput}/>
-                            <label id='conditions' className={styles.conditions}>
+                            <label id='conditions' name="conditions" className={styles.conditions}>
                                 He leído y acepto las condiciones.
                             </label>
                         </div>
