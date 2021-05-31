@@ -11,7 +11,7 @@ const Formulario = () => {
             <div className={styles.infoWrapper}>
                 <div className={styles.info}>
                     <div className={styles.illustration}>
-                        <Image src='/illustrations/pack-basico.webp' alt='' width={261.775} height={185} />
+                        <img src='/illustrations/pack-basico.webp' alt='' width="261.775px" height="185px" />
                     </div>
                     <h1>Estamos aquí para tí</h1>
                     <p className={styles.phoneLink}><a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} />690 093 663</a></p>
