@@ -37,13 +37,6 @@ const Formulario = () => {
                         <textarea id='message' name="message" className={styles.messageTextArea}/>
 
                         <div className={styles.checkboxDiv}>
-                            <input type="checkbox" htmlFor='subscription' className={styles.subscriptionInput}/> 
-                            <label id='subscription' name="subscription" className={styles.subscription}>
-                                Deseo suscribirme al Boletín de Noticias de Polaris Data y Ágora RR.HH.
-                            </label>
-                        </div>
-
-                        <div className={styles.checkboxDiv}>
                             <input type="checkbox" htmlFor='conditions' required className={styles.conditionsInput}/>
                             <label id='conditions' name="conditions" className={styles.conditions}>
                                 He leído y acepto las condiciones.
