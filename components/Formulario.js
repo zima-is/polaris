@@ -21,7 +21,11 @@ const Formulario = () => {
                 </div>
             </div>
             <div className={styles.formWrapper}>
-                    <form className={styles.form}>
+                    <form className={styles.form} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <p className={styles.honeypotHidden}>
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
+                    
                         <label htmlFor='name' value='Nombre' className={styles.name}>NOMBRE</label>
                         <input id='name' type="text" className={styles.nameInput}/>
                         
