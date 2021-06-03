@@ -1,8 +1,6 @@
 import styles from '../styles/Layout.module.css'
-import Nav from './Nav'
 import Navigation from './Navigation.js'
 import Footer from './Footer.js'
-import Meta from './Meta'
 import ContactBanner from './ContactBanner'
 
 import { DefaultSeo } from 'next-seo'

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -102,7 +101,7 @@ const Post = ({ post }) => {
                 < NextSeo {...SEO} />
                 <div className={styles.container}>
                     <div className={styles.postImage}>
-                        < Image className={styles.image} src={'https:' + post.fields.picture.fields.file.url} width={post.fields.picture.fields.file.details.image.width} height={post.fields.picture.fields.file.details.image.height} alt='' />
+                        < img className={styles.image} src={`https:${post.fields.picture.fields.file.url}`} width={post.fields.picture.fields.file.details.image.width} alt='' />
                     </div>            
                     <div className={styles.postEntry}>
                         <h1 className={styles.postTitle}>{post.fields.title}</h1>

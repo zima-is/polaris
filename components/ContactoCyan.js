@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import styles from '../styles/ContactoCyan.module.css'
 
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'

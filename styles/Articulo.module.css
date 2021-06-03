@@ -1,95 +1,100 @@
 .container {
-    width: 100%;
-    max-width: 1080px;
+  width: 100%;
+  max-width: 1080px;
 
-    padding: 23px;
-    margin: 0px auto;
+  padding: 23px;
+  margin: 0px auto;
 }
 
 /* POST IMAGE */
 .postImage {
-    max-width: 780px;
+  max-width: 780px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin: 0px auto 32px auto;
+  margin: 0px auto 32px auto;
 }
 .image {
-    width: 100%;
-    
+  width: 100%;
 }
 
 /* POST ENTRY */
 .postEntry {
-    max-width: 85%;
+  max-width: 85%;
 
-    margin: 0px auto;
+  margin: 0px auto;
 }
 .postTitle {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #113159;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #113159;
 
-    margin-top: 0px;
-    margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 .postDate {
-    text-align: center;
-    font-weight: 400;
-    color: #86b5d6;
+  text-align: center;
+  font-weight: 400;
+  color: #86b5d6;
 
-    margin-top: 0px;
-    margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
 .postContent {
-    color: #113159;
+  color: #113159;
 }
 .postContent * {
-    line-height: 1.75rem;
+  line-height: 1.75rem;
 }
-.postContent ol, .postContent ul {
-    padding-inline-start: 40px;
+.postContent ol,
+.postContent ul {
+  padding-inline-start: 40px;
 }
-.postContent li > ol, .postContent li > ul {
-    padding-inline-start: 20px;
+.postContent li > ol,
+.postContent li > ul {
+  padding-inline-start: 20px;
+}
+.postContent p a {
+  font-weight: bold;
+  color: #86b5d6;
 }
 
 .backButton {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 
-    margin: 64px 0px;
+  margin: 64px 0px;
 }
 
 .backLink {
-    font-weight: 300;
-    color: #fff;
-    background-color: #113159;
-    border-radius: 4px;
-    padding: 5px 10px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #113159;
+  border-radius: 4px;
+  padding: 5px 10px;
 
-    margin: 0px auto;
+  margin: 0px auto;
 }
 .backLink:hover {
-    background-color: #86b5d6;
+  background-color: #86b5d6;
 }
 
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 360px) {
-    .postTitle {
-        font-size: 1.55rem;
-    }
+  .postTitle {
+    font-size: 1.55rem;
+  }
 }
 @media (min-width: 520px) {
-    .postTitle {
-        font-size: 1.85rem;
-    }
+  .postTitle {
+    font-size: 1.85rem;
+  }
 }
