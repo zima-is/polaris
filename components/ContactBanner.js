@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const ContactBanner = () => {
     return (
         <div className={styles.wrapper}>
-            <p>Estamos aquí para tí <a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} className={styles.phoneLink} /><span className={styles.spanBold}>690 093 663</span></a></p>
+            <p>Estamos aquí para ti <a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} className={styles.phoneLink} /><span className={styles.spanBold}>690 093 663</span></a></p>
         </div>
     );
 }
