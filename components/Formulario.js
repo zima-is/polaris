@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import styles from '../styles/Formulario.module.css'
 
-import { faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Formulario = () => {
@@ -14,7 +14,7 @@ const Formulario = () => {
                         <img src='/illustrations/pack-basico.webp' alt='' width="261.775px" height="185px" />
                     </div>
                     <h1>Estamos aquí para tí</h1>
-                    <p className={styles.phoneLink}><a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} />690 093 663</a></p>
+                    <p className={styles.phoneLink}><a href="https://wa.me/34690093663" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />690 093 663</a></p>
                     <p>En Polaris encontrarás siempre a un profesional al otro lado del teléfono que <span className={styles.bolder}>te guiará.</span></p>
                     <p>Si lo prefieres puedes escribirnos a través del formulario.</p>
                     <p className={styles.bolder}><a href="mailto:test@test.com">polarisdata@polarisdata.es</a></p>

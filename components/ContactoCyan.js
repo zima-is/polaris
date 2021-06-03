@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import styles from '../styles/ContactoCyan.module.css'
 
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ContactoCyan = () => {
@@ -11,7 +11,7 @@ const ContactoCyan = () => {
             <div className={styles.wrapperGrid}>
                 <div className={styles.phone}>
                     <p>Estamos aquí para tí</p>
-                    <p className={styles.phoneLink}><a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} />690 093 663</a></p>
+                    <p className={styles.phoneLink}><a href="https://wa.me/34690093663" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />690 093 663</a></p>
                 </div>
                 <div className={styles.mail}>
                     <p>En Polaris encontrarás siempre a un profesional al otro lado del teléfono que <span className={styles.spanNavy}>te guiará</span>.</p>

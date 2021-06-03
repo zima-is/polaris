@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.contacto}>
                         <p><a href="mailto:test@test.com">polarisdata@polarisdata.es</a></p>
-                        <p><a href="tel:+34690093663">690 093 663</a></p>
+                        <p><a href="https://wa.me/34690093663" target="_blank">690 093 663</a></p>
                         <div className={styles.signature}>
                             <p>Polaris.</p>
                             <p> &#169; Derechos reservados.</p>

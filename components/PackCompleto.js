@@ -1,6 +1,7 @@
 import styles from '../styles/PackCompleto.module.css'
 
-import { faPhoneAlt, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PackCompleto = () => {
@@ -34,7 +35,7 @@ const PackCompleto = () => {
                 <div className={styles.cardFooter}>
                     <p>¿Necesitas más información?</p>
                     <p>Estamos aquí para ti</p>
-                    <p className={styles.phoneLink}><a href="tel:+34690093663">< FontAwesomeIcon icon={faPhoneAlt} />690 093 663</a></p>
+                    <p className={styles.phoneLink}><a href="https://wa.me/34690093663" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />690 093 663</a></p>
                     <p>También <a href="mailto:testr@test.com">puedes escribirnos aquí</a></p>
                 </div>
                 <div className={styles.recomendado}>
