@@ -1,196 +1,177 @@
+/* autoprefixer grid: autoplace */
+
 .fullWidth {
-    width: 100%;
-    /*max-width: 1080px;*/
+  width: 100%;
 
-    /*padding: 23px;*/
-
-    background-color: rgba(134, 181, 214, .3);
-    /*position: absolute;
-    left: 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    background-color: rgba(134, 181, 214, .3);
-
-    margin-top: 23px;*/
-
-
+  background-color: rgba(134, 181, 214, 0.3);
 }
 
 /******************** GRID *******************/
 .cardGrid {
-    width: 100%;
-    max-width: 835px;
+  width: 100%;
+  max-width: 835px;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        "card-header"
-        "card-content"
-        "card-footer"
-    ;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card-header"
+    "card-content"
+    "card-footer";
 
-    box-shadow: 0px 10px 25px rgb(0 0 0 / 55%);
+  box-shadow: 0px 10px 25px rgb(0 0 0 / 55%);
 
-    margin: 100px auto;
+  margin: 100px auto;
 }
 .cardHeader {
-    grid-area: card-header;
-    
-    background-color: #113159;
-}
-.cardContent{
-    grid-area: card-content;
+  grid-area: card-header;
 
-    background-color: #fff;
-}
-.cardFooter {
-    grid-area: card-footer;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    background-color: #113159;
-}
-
-.cardHeader, .cardFooter {
-    padding: 32px;
+  background-color: #113159;
 }
 .cardContent {
-    padding: 32px 15px;
+  grid-area: card-content;
+
+  background-color: #fff;
+}
+.cardFooter {
+  grid-area: card-footer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-color: #113159;
 }
 
+.cardHeader,
+.cardFooter {
+  padding: 32px;
+}
+.cardContent {
+  padding: 32px 15px;
+}
 
 /************* CARDHEADER & CARDFOOTER ************/
-.cardHeader p, .cardFooter p {
-    max-width: 275px;
-    font-weight: 300;
+.cardHeader p,
+.cardFooter p {
+  max-width: 275px;
+  font-weight: 300;
 }
 .cardHeader p {
-    line-height: 1.75rem;
+  line-height: 1.75rem;
 }
 .cardHeader * {
-    color: #fff;
+  color: #fff;
 
-    margin: 12px 0px;
+  margin: 12px 0px;
 }
 .cardFooter * {
-    color: #fff;
+  color: #fff;
 
-    margin: 6px 0px;
+  margin: 6px 0px;
 }
 .cardHeader p span {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .emailLink {
-    width: 115px;
+  width: 115px;
 
-    text-align: center;
-    border-radius: 3px;
-    background-color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fff;
 
-    padding: 8px;
-    margin: 35px 0px 12px 0;
-    
+  padding: 8px;
+  margin: 35px 0px 12px 0;
 }
 .emailLink a {
-    font-weight: 500;
-    color: #113159;
+  font-weight: 500;
+  color: #113159;
 }
 .emailLink:hover {
-    background-color: #86b5d6;
+  background-color: #86b5d6;
 }
 .emailLink:hover a {
-    color: #fff;
+  color: #fff;
 }
 
 .phoneLink a {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .phoneLink a svg {
-    font-size: 1.15rem;
-    margin: 0px 6px 2px 0px;
-    
+  font-size: 1.15rem;
+  margin: 0px 6px 2px 0px;
 }
 .cardFooter p:last-child a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /******************** CARD CONTENT *******************/
 .cardContent * {
-    color: #113159;
-    
-    margin: 0px;
+  color: #113159;
+
+  margin: 0px;
 }
 
 .intro {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 .intro::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
 
-    background-color: #113159;
+  background-color: #113159;
 
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
 }
 
 .cardContent ul {
-    list-style: none;
-    padding-inline-start: 0px;
+  list-style: none;
+  padding-inline-start: 0px;
 
-    margin: 1rem;
+  margin: 1rem;
 }
 .cardContent ul li {
-    margin: 8px 0px;
+  margin: 8px 0px;
 }
 
-/*.cardContent li~ul {
-    list-style: disc;
-    padding-inline-start: 45px;
-}*/
 .documentacion {
-    position: relative;
-    font-weight: 700;
-    color: #86b5d6;
+  position: relative;
+  font-weight: 700;
+  color: #86b5d6;
 
-    margin: 15px 0px 15px 40px;
+  margin: 15px 0px 15px 40px;
 }
 
-.cardContent p svg, .cardContent li svg {
-    font-size: .75rem;
-    margin: 0px 8px 1px 0px;
+.cardContent p svg,
+.cardContent li svg {
+  font-size: 0.75rem;
+  margin: 0px 8px 1px 0px;
 }
-.cardContent p svg path, .cardContent li svg path {
-    fill: #86b5d6;
+.cardContent p svg path,
+.cardContent li svg path {
+  fill: #86b5d6;
 }
-
 
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 785px) {
-    .cardGrid {
-        grid-template-columns: 340px auto;
-        grid-template-rows: 1fr content;
-        grid-template-areas: 
-            "card-header card-content"
-            "card-footer card-content"
-        ;
-    }
-    .cardFooter {
-        padding: 55px 32px 32px 32px;
-    }
+  .cardGrid {
+    grid-template-columns: 340px auto;
+    grid-template-rows: 1fr content;
+    grid-template-areas:
+      "card-header card-content"
+      "card-footer card-content";
+  }
+  .cardFooter {
+    padding: 55px 32px 32px 32px;
+  }
 }

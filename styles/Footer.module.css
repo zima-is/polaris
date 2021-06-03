@@ -1,159 +1,184 @@
+/* autoprefixer grid: autoplace */
+
 .footer {
-    width: 100vw;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    background-color: rgba(17, 49, 89, 1);
+  background-color: rgba(17, 49, 89, 1);
 }
 
 .footerGrid {
-    width: 100%;
-    max-width: 1080px;
+  width: 100%;
+  max-width: 1080px;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        "polaris"
-        "links"
-        "legal"
-        "contacto"
-    ;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "polaris"
+    "links"
+    "legal"
+    "contacto";
 
-    margin: 23px 0px;
+  margin: 23px 0px;
 }
-.polaris, .links, .legal, .contacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink: 3;
-    justify-content: flex-start;
-    align-items: center;
+.polaris,
+.links,
+.legal,
+.contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: 3;
+  justify-content: flex-start;
+  align-items: center;
 
-    color: #fff;
+  color: #fff;
 
-    padding: 15px 8px 15px 8px;
+  padding: 15px 8px 15px 8px;
 }
-.polaris *, .links *, .legal *, .contacto * {
-    font-size: .85rem;
+.polaris *,
+.links *,
+.legal *,
+.contacto * {
+  font-size: 0.85rem;
 }
-.polaris a:hover, .links a:hover, .legal a:hover, .contacto a:hover {
-    color: #86b5d6;
+.polaris a:hover,
+.links a:hover,
+.legal a:hover,
+.contacto a:hover {
+  color: #86b5d6;
 }
 
 /******************** POLARIS *******************/
 .polaris {
-    grid-area: polaris;
+  grid-area: polaris;
 }
 .polaris p {
-    color: #86b5d6;
-    margin: 23px 0px 0px 0px;
+  color: #86b5d6;
+  margin: 23px 0px 0px 0px;
 }
-.polaris p~p {
-    margin-top: 8px;
+.polaris p ~ p {
+  margin-top: 8px;
 }
 /**************** LINKS & LEGAL *****************/
 .links {
-    grid-area: links;
+  grid-area: links;
 }
-.links ul, .legal ul {
-    list-style: none;
-    padding-inline-start: 0px;
-    margin: 0px;
+.legal {
+  grid-area: legal;
 }
-.links ul li, .legal ul li {
-    text-align: center;
-    margin-bottom: 8px;
+.links ul,
+.legal ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
 }
-.links ul li:last-of-type, .legal ul li:last-of-type {
-    margin-bottom: 0px;
+.links ul li,
+.legal ul li {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.links ul li:last-of-type,
+.legal ul li:last-of-type {
+  margin-bottom: 0px;
 }
 /******************* CONTACTO *******************/
 .contacto {
-    grid-area: contacto;
+  grid-area: contacto;
 }
 .contacto p {
-    font-weight: 700;
-    margin: 0px;
-    margin-bottom: 8px;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 .signature {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 .signature p {
-    font-weight: 400;
-    text-align: center;
-    color: #86b5d6;
+  font-weight: 400;
+  text-align: center;
+  color: #86b5d6;
 }
 
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 300px) {
-    .polaris, .links, .legal, .contacto {
-        padding: 23px 23px 23px 23px;
-    }
-    .links *, .legal *, .contacto * {
-        font-size: 1rem;
-    }
-    .polaris * {
-        font-size: .9rem;
-    }
+  .polaris,
+  .links,
+  .legal,
+  .contacto {
+    padding: 23px 23px 23px 23px;
+  }
+  .links *,
+  .legal *,
+  .contacto * {
+    font-size: 1rem;
+  }
+  .polaris * {
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 550px) {
-    .footerGrid {
-        width: 100%;
-        max-width: 1080px;
+  .footerGrid {
+    width: 100%;
+    max-width: 1080px;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "polaris links"
-            "contacto legal"
-        ;
-    }
-    .polaris, .links, .legal, .contacto {
-        align-items: flex-start;
-    }
-    .polaris, .contacto {
-        margin-left: 50px;
-    }
-    .links ul {
-        margin-top: 23px;
-    }
-    .links ul li, .legal ul li {
-        text-align: left;
-    }
-    .signature {
-        margin-top: 8px;
-    }
-    .signature p {
-        text-align: left;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "polaris links"
+      "contacto legal";
+  }
+  .polaris,
+  .links,
+  .legal,
+  .contacto {
+    align-items: flex-start;
+  }
+  .polaris,
+  .contacto {
+    margin-left: 50px;
+  }
+  .links ul {
+    margin-top: 23px;
+  }
+  .links ul li,
+  .legal ul li {
+    text-align: left;
+  }
+  .signature {
+    margin-top: 8px;
+  }
+  .signature p {
+    text-align: left;
+  }
 }
 @media (min-width: 980px) {
-    .footerGrid {
-        width: 100%;
-        max-width: 1080px;
+  .footerGrid {
+    width: 100%;
+    max-width: 1080px;
 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-            "polaris links legal contacto"
-        ;
-    }
-    .polaris, .contacto {
-        margin-left: 0px;
-    }
-    .links ul {
-        margin-top: 0px;
-    }
-    .links, .legal, .contacto {
-        padding-top: 46px;
-    }
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "polaris links legal contacto";
+  }
+  .polaris,
+  .contacto {
+    margin-left: 0px;
+  }
+  .links ul {
+    margin-top: 0px;
+  }
+  .links,
+  .legal,
+  .contacto {
+    padding-top: 46px;
+  }
 }

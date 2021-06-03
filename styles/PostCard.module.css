@@ -1,129 +1,128 @@
+/* autoprefixer grid: autoplace */
+
 .postGrid {
-    width: 100%;
-    max-width: 750px;
+  width: 100%;
+  max-width: 750px;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        "date"
-        "title"
-        "summary"
-        "link"
-        "deco"
-    ;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "date"
+    "title"
+    "summary"
+    "link"
+    "deco";
 
-    box-shadow: 0px 0px 15px rgb(0 0 0 / 45%);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 45%);
 }
 /******************** DATE *******************/
 .date {
-    grid-area: date;
+  grid-area: date;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #113159;
+  background-color: #113159;
 }
 .date p {
-    font-size: 1.15rem;
-    font-weight: 500;
-    color: #fff;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
 
-    padding: 15px;
-    margin: 0px;
+  padding: 15px;
+  margin: 0px;
 }
 
 /******************** TITLE *******************/
 .title {
-    grid-area: title;
+  grid-area: title;
 
-    font-size: 1.35rem;
-    color: #113159;
+  font-size: 1.35rem;
+  color: #113159;
 
-    padding: 23px;
-    margin: 0px;
+  padding: 23px;
+  margin: 0px;
 }
 /******************** SUMMARY *******************/
 .summary {
-    grid-area: summary;
+  grid-area: summary;
 
-    font-size: .95rem;
-    line-height: 1.75rem;
-    font-weight: 300;
-    color: #113159;
+  font-size: 0.95rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  color: #113159;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
-    padding: 0px 35px 0px 23px;
-    margin: 0px;
+  padding: 0px 35px 0px 23px;
+  margin: 0px;
 }
 /******************** LINK *******************/
 .link {
-    grid-area: link;
+  grid-area: link;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 .link a {
-    font-weight: 300;
+  font-weight: 300;
 
-    background-color: #113159;
-    color: #fff;
-    border-radius: 3px;
+  background-color: #113159;
+  color: #fff;
+  border-radius: 3px;
 
-    padding: 8px 16px;
-    margin: 23px 35px 23px 0px;
+  padding: 8px 16px;
+  margin: 23px 35px 23px 0px;
 }
 .link a:hover {
-    background-color: #86b5d6;
+  background-color: #86b5d6;
 }
 /******************** DECO *******************/
 .deco {
-    grid-area: deco;
-    height: 15px;
+  grid-area: deco;
+  height: 15px;
 
-    background-color: #86b5d6;
+  background-color: #86b5d6;
 }
 
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 475px) {
-    .postGrid {
-        display: grid;
-        grid-template-columns: 62px 1fr 15px;
-        grid-template-areas: 
-            "date title deco"
-            "date summary deco"
-            "date link deco"
-        ;
-    }
-    .deco {
-        height: 100%;
-    }
-    .title {
-        font-size: 1.5rem;
-    }
-    .date p {
-        transform: rotate(-90deg);
+  .postGrid {
+    display: grid;
+    grid-template-columns: 62px 1fr 15px;
+    grid-template-areas:
+      "date title deco"
+      "date summary deco"
+      "date link deco";
+  }
+  .deco {
+    height: 100%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .date p {
+    transform: rotate(-90deg);
 
-        padding: 0px;
-    }
+    padding: 0px;
+  }
 }
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 796px) {
-    .postGrid {
-        margin: 0px auto;
-    }
+  .postGrid {
+    margin: 0px auto;
+  }
 }

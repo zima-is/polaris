@@ -1,103 +1,87 @@
 .navWrapper {
-    width: 100%;
-    max-width: 1080px;
+  width: 100%;
+  max-width: 1080px;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
 
-    padding: 23px;
-    margin: 0px auto;
+  padding: 23px;
+  margin: 0px auto;
 }
 .navHeader {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 
-    padding-bottom: 23px;
+  padding-bottom: 23px;
 }
 .iconToggleMenu {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .navLinks {
-    width: 100%;
+  width: 100%;
 
-    display: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 .displayFlex {
-    display: flex !important;
+  display: flex !important;
 }
 .navLinks * {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #113159
+  font-size: 1rem;
+  font-weight: 500;
+  color: #113159;
 }
 
 /*********** SERVICIOS (DROPDOWN) ***************/
-/*.servicios span::after {
-    display: inline-block;
-    content: url('../public/caret-down.svg');
-    width: 12px;
-    height: 12px;
-
-    margin-left: 5px;  
-}*/
 .servicios a {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .dropdown {
-    /*display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-
-    width: 320px;*/
-    border-left: 1px solid rgba(17, 49, 89, .4);
-    padding-left: 23px;
-
+  border-left: 1px solid rgba(17, 49, 89, 0.4);
+  padding-left: 23px;
 }
 .dropdown a {
-    display: block;
-    font-weight: 300 !important;
+  display: block;
+  font-weight: 300 !important;
 
-    padding: 12px 0px;
-    margin: 0px;
+  padding: 12px 0px;
+  margin: 0px;
 }
 
 .servicios:hover .dropdown {
-    display: block;
+  display: block;
 }
 .tag {
-    font-size: .75rem;
-    font-weight: 500;
-    line-height: normal;
-    color: rgba(23, 48, 87, .85);
-    background-color: rgba(141, 180, 212, .35);
-    border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(23, 48, 87, 0.85);
+  background-color: rgba(141, 180, 212, 0.35);
+  border-radius: 3px;
 
-    margin-left: 8px;
-    padding: 3px 4px;
+  margin-left: 8px;
+  padding: 3px 4px;
 }
 /************************************************/
 
 .item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 
-    padding: 12px 0px;;
-    margin-left: 0px;
+  padding: 12px 0px;
+  margin-left: 0px;
 }
 
 /****************************************************************
@@ -105,128 +89,128 @@
 *****************************************************************/
 
 @media (min-width: 820px) {
-    .navWrapper {
-        width: 100%;
-        max-width: 1080px;
-        height: 135px;
+  .navWrapper {
+    width: 100%;
+    max-width: 1080px;
+    height: 135px;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
 
-        padding: 23px;
-        margin: 0px auto;
-    }
-    .navHeader {
-        display: block;
-        width: fit-content;
+    padding: 23px;
+    margin: 0px auto;
+  }
+  .navHeader {
+    display: block;
+    width: fit-content;
 
-        padding-bottom: 0px;
-    }
-    .iconToggleMenu {
-        display: none;
-        /*margin-top: 28px !important;*/
-    }
-    .navLinks {
-        width: 100% !important;
+    padding-bottom: 0px;
+  }
+  .iconToggleMenu {
+    display: none;
+    /*margin-top: 28px !important;*/
+  }
+  .navLinks {
+    width: 100% !important;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    .item {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 
-        padding: 0px;
-        margin-left: 23px;
-    }
-    .item:hover {
-        color: #86b5d6;
-    }
-    /*********** SERVICIOS (DROPDOWN) ***************/
-    .servicios {
-        position: relative;
-    }
-    .servicios span:not(.tag):after {
-        display: inline-block;
-        content: url('../public/caret-down.svg');
-        width: 12px;
-        height: 12px;
+    padding: 0px;
+    margin-left: 23px;
+  }
+  .item:hover {
+    color: #86b5d6;
+  }
+  /*********** SERVICIOS (DROPDOWN) ***************/
+  .servicios {
+    position: relative;
+  }
+  .servicios span:not(.tag):after {
+    display: inline-block;
+    content: url("../public/caret-down.svg");
+    width: 12px;
+    height: 12px;
 
-        margin-left: 5px;  
-    }
-    .servicios a {
-        padding-bottom: 0px;
-    }
-    .dropdown {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 85%;
-        z-index: 10;
+    margin-left: 5px;
+  }
+  .servicios a {
+    padding-bottom: 0px;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 85%;
+    z-index: 10;
 
-        width: 300px;
+    width: 300px;
 
-        background-color: #fff;
-        box-shadow: 0px 10px 70px rgba(0 0 0/15%);
-        
-        border-left: none;
-        border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 10px 70px rgba(0 0 0/15%);
 
-        padding: 12px;
-    }
-    .servicios:hover .dropdown {
-        display: block;
-    }
-    .dropdown a {
-        position: relative;
+    border-left: none;
+    border-radius: 4px;
 
-        font-weight: 500 !important;
-        border-radius: 4px;
+    padding: 12px;
+  }
+  .servicios:hover .dropdown {
+    display: block;
+  }
+  .dropdown a {
+    position: relative;
 
-        padding: 16px 18px; 
-    }
-    .dropdown a:hover {
-        background-color: rgba(141, 180, 212, .25);
-    }
-    .dropdown a::after {
-        content: url('../public/icon-arrow-left.svg');
-        width: 12px;
-        height: 12px;
-        
-        position: absolute;
-        right: 25px;
+    font-weight: 500 !important;
+    border-radius: 4px;
 
-        color: #113159;
-        opacity: 0;
+    padding: 16px 18px;
+  }
+  .dropdown a:hover {
+    background-color: rgba(141, 180, 212, 0.25);
+  }
+  .dropdown a::after {
+    content: url("../public/icon-arrow-left.svg");
+    width: 12px;
+    height: 12px;
 
-        transition: right 200ms linear, opacity 200ms ease;
+    position: absolute;
+    right: 25px;
 
-        margin-bottom: 8px;
-    }
-    .dropdown a:hover::after {
-        right: 18px;
-        opacity: 1;
-    }
-    /************************************************/
-    .guia {
-        align-self: center;
+    color: #113159;
+    opacity: 0;
 
-        font-size: 1rem;
-        font-weight: 300;
-        color: #fff;
-        background-color: #113159;
-        border-radius: 4px;
-        padding: 5px 10px;
-    }
-    .guia:hover {
-        color: #fff;
-        background-color: #86b5d6;       
-    }
+    transition: right 200ms linear, opacity 200ms ease;
+
+    margin-bottom: 8px;
+  }
+  .dropdown a:hover::after {
+    right: 18px;
+    opacity: 1;
+  }
+  /************************************************/
+  .guia {
+    align-self: center;
+
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #113159;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .guia:hover {
+    color: #fff;
+    background-color: #86b5d6;
+  }
 }

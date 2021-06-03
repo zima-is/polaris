@@ -1,159 +1,124 @@
+/* autoprefixer grid: autoplace */
+
 .fullWidth {
-    width: 100%;
+  width: 100%;
 
-    background-color: #113159;
-
+  background-color: #113159;
 }
 .wrapper {
-    width: 100%;
-    max-width: 1080px;
+  width: 100%;
+  max-width: 1080px;
 
-    margin: 0 auto;
-    padding: 50px 23px;
+  margin: 0 auto;
+  padding: 50px 23px;
 }
 .h2 {
-    width: 100%;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
 
-    margin-top: 0px;
-    margin-bottom: 50px;
-    /*padding: 23px;*/
+  margin-top: 0px;
+  margin-bottom: 50px;
+  /*padding: 23px;*/
 }
 
 .equipoGrid {
-    width: fit-content;
+  width: fit-content;
 
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    grid-template-areas: 
-        "ck-consultores consultores"
-        "ck-tecnicos tecnicos"
-        "ck-auditores auditores"
-        "ck-abogados abogados"
-        "ck-formadores formadores"
-        "ck-gestores gestores"
-        "ck-expertos expertos"
-    ;
-    margin: 0px auto;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  grid-template-areas:
+    "ck-consultores consultores"
+    "ck-tecnicos tecnicos"
+    "ck-auditores auditores"
+    "ck-abogados abogados"
+    "ck-formadores formadores"
+    "ck-gestores gestores"
+    "ck-expertos expertos";
+  margin: 0px auto;
 }
 .equipoGrid p {
-    color: #fff;
-    margin: 0px 0px 12px 12px;
+  color: #fff;
+  margin: 0px 0px 12px 12px;
 }
 .check {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .check svg {
-    color: #86b5d6;
+  color: #86b5d6;
 }
 .consultoresCheck {
-    grid-area: ck-consultores;
+  grid-area: ck-consultores;
 }
 .consultores {
-    grid-area: consultores;
+  grid-area: consultores;
 }
 .tecnicosCheck {
-    grid-area: ck-tecnicos;
+  grid-area: ck-tecnicos;
 }
 .tecnicos {
-    grid-area: tecnicos;
+  grid-area: tecnicos;
 }
 .auditoresCheck {
-    grid-area: ck-auditores;
+  grid-area: ck-auditores;
 }
 .auditores {
-    grid-area: auditores;
+  grid-area: auditores;
 }
 .abogadosCheck {
-    grid-area: ck-abogados;
+  grid-area: ck-abogados;
 }
 .abogados {
-    grid-area: abogados;
+  grid-area: abogados;
 }
 .expertosCheck {
-    grid-area: ck-expertos;
+  grid-area: ck-expertos;
 }
 .expertos {
-    grid-area: expertos;
+  grid-area: expertos;
 }
 .formadoresCheck {
-    grid-area: ck-formadores;
+  grid-area: ck-formadores;
 }
 .formadores {
-    grid-area: formadores;
+  grid-area: formadores;
 }
 .gestoresCheck {
-    grid-area: ck-gestores;
+  grid-area: ck-gestores;
 }
 .gestores {
-    grid-area: gestores;
+  grid-area: gestores;
 }
-
-
-
-/*.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.container * {
-    color: #fff;
-}
-.container ul {
-    list-style: none;
-    padding-inline-start: 0px;
-    margin: 0px;
-    margin-left: 23px;
-}
-.container ul li {
-    margin: 8px 0px;
-}
-.container ul li:first-child {
-    margin-top: 0px;
-}
-.container ul li svg {
-    font-size: .75rem;
-    margin: 0px 8px 1px 0px;
-}
-.container ul li svg path {
-    fill: #86b5d6;
-}*/
 
 /****************************************************************
 ************************* MEDIA QUERIES *************************
 *****************************************************************/
 @media (min-width: 300px) {
-    .h2 {
-        font-size: 1.3rem;
-    }
+  .h2 {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 500px) {
-    .equipoGrid {
-        grid-template-columns: 18px 175px 18px 210px;
-        grid-template-areas: 
-            "ck-consultores consultores ck-abogados abogados"
-            "ck-tecnicos tecnicos ck-formadores formadores"
-            "ck-auditores auditores ck-gestores gestores"
-            "ck-expertos expertos . ."
-        ;
+  .equipoGrid {
+    grid-template-columns: 18px 175px 18px 210px;
+    grid-template-areas:
+      "ck-consultores consultores ck-abogados abogados"
+      "ck-tecnicos tecnicos ck-formadores formadores"
+      "ck-auditores auditores ck-gestores gestores"
+      "ck-expertos expertos . .";
 
-        margin: 0px auto;
-    }
+    margin: 0px auto;
+  }
 }
 @media (min-width: 920px) {
-    .equipoGrid {
-        grid-template-columns:18px 175px 18px 125px 18px 210px;
-        grid-template-areas: 
-            "ck-consultores consultores ck-auditores auditores ck-formadores formadores"
-            "ck-tecnicos tecnicos ck-abogados abogados ck-gestores gestores"
-            "ck-expertos expertos . . . ."
-        ;
-    }
+  .equipoGrid {
+    grid-template-columns: 18px 175px 18px 125px 18px 210px;
+    grid-template-areas:
+      "ck-consultores consultores ck-auditores auditores ck-formadores formadores"
+      "ck-tecnicos tecnicos ck-abogados abogados ck-gestores gestores"
+      "ck-expertos expertos . . . .";
+  }
 }
