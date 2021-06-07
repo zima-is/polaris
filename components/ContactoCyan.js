@@ -8,7 +8,7 @@ const ContactoCyan = () => {
         <div className={styles.fullWidth}>
             <div className={styles.wrapperGrid}>
                 <div className={styles.phone}>
-                    <p>Estamos aquí para tí</p>
+                    <p>Estamos aquí para ti</p>
                     <p className={styles.phoneLink}><a href="https://wa.me/34690093663" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />690 093 663</a></p>
                 </div>
                 <div className={styles.mail}>
