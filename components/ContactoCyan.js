@@ -9,7 +9,7 @@ const ContactoCyan = () => {
             <div className={styles.wrapperGrid}>
                 <div className={styles.phone}>
                     <p>Estamos aquí para ti</p>
-                    <p className={styles.phoneLink}><a href="https://wa.me/34690093663" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />690 093 663</a></p>
+                    <p className={styles.phoneLink}><a href="https://wa.me/34602256136" target="_blank">< FontAwesomeIcon icon={faWhatsapp} />602 256 136</a></p>
                 </div>
                 <div className={styles.mail}>
                     <p>En Polaris encontrarás siempre a un profesional al otro lado del teléfono que <span className={styles.spanNavy}>te guiará</span>.</p>
