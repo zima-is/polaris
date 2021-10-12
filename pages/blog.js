@@ -33,7 +33,22 @@ const ArticulosPage = ({ posts }) => {
 
     return (
         <>
-            < NextSeo {...SEO} />
+            < NextSeo {...SEO} 
+                openGraph={{
+                    type: 'website',
+                    url: 'https://www.polarisdata.es/blog',
+                    title: 'Polaris Data | Blog',
+                    description: 'Información sobre estratégias de protección de datos y privacidad relevantes para tu empresa',
+                    images: [
+                      {
+                        url: '/illustrations/og-card.webp',
+                        width: 1200,
+                        height: 630,
+                        alt: '',
+                      }
+                    ],
+                }}
+            />
             <div className={styles.postsContainer}>
                 <ul className={styles.postsWrapper}>
                     {
