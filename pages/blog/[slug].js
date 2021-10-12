@@ -98,7 +98,25 @@ const Post = ({ post }) => {
 
         return (
             <>
-                < NextSeo {...SEO} />
+                < NextSeo {...SEO} 
+                    openGraph={{
+                        title: `${post.fields.data}`,
+                        description: `${post.fields.summary}`,
+                        url: `https://www.polarisdata.es/blog/${post.fields.slug}`,
+                        type: 'article',
+                        article: {
+                            publishedTime: `${post.fields.date}`
+                        },
+                        images: [
+                            {
+                            url: `https:${post.fields.picture.fields.file.url}`,
+                            width: `${post.fields.picture.fields.file.details.image.width}`,
+                            height: `${post.fields.picture.fields.file.details.image.height}`,
+                            alt: ''
+                            },
+                        ],
+                    }}
+                />
                 <div className={styles.container}>
                     <div className={styles.postImage}>
                         < img className={styles.image} src={`https:${post.fields.picture.fields.file.url}`} width={post.fields.picture.fields.file.details.image.width} alt='' />
