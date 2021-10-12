@@ -100,7 +100,7 @@ const Post = ({ post }) => {
             <>
                 < NextSeo {...SEO} 
                     openGraph={{
-                        title: `${post.fields.data}`,
+                        title: `${post.fields.title}`,
                         description: `${post.fields.summary}`,
                         url: `https://www.polarisdata.es/blog/${post.fields.slug}`,
                         type: 'article',
