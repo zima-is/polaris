@@ -13,7 +13,22 @@ export default function ConocenosPage() {
 
   return (
     <>
-      < NextSeo {...SEO} />
+      < NextSeo {...SEO} 
+          openGraph={{
+            type: 'website',
+            url: 'https://www.polarisdata.es/conocenos',
+            title: 'Polaris | Conócenos',
+            description: 'Conoce nuestro equipo de profesionales con más de 30 años de experiencia',
+            images: [
+              {
+                url: '/illustrations/og-card.webp',
+                width: 1200,
+                height: 630,
+                alt: '',
+              }
+            ],
+        }}
+      />
       < Conocenos />
       < Equipo />
       < Contacto />

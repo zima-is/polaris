@@ -12,7 +12,22 @@ export default function ConsultoriaPage() {
 
   return (
     <>
-      < NextSeo {...SEO} />
+      < NextSeo {...SEO} 
+          openGraph={{
+            type: 'website',
+            url: 'https://www.polarisdata.es/consultoria',
+            title: 'Polaris | Consultoría',
+            description: 'Servicio de consultoría integral, especializado y totalmente personalizado a las necesidades de tu empresa',
+            images: [
+              {
+                url: '/illustrations/og-card.webp',
+                width: 1200,
+                height: 630,
+                alt: '',
+              }
+            ],
+        }}
+      />
       < Consultoria />
       < Servicios />
     </>

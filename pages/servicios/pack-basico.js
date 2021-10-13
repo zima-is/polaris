@@ -11,7 +11,22 @@ export default function PackBasicoPage() {
 
   return (
     <>
-      < NextSeo {...SEO} />
+      < NextSeo {...SEO} 
+          openGraph={{
+            type: 'website',
+            url: 'https://www.polarisdata.es/servicios/pack-basico',
+            title: 'Polaris | Pack Básico',
+            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 6 meses de consultoría y masterclass',
+            images: [
+              {
+                url: '/illustrations/og-card.webp',
+                width: 1200,
+                height: 630,
+                alt: '',
+              }
+            ],
+        }}
+      />
       < PackBasico />
     </>
   )

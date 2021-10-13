@@ -11,7 +11,22 @@ export default function PackCompletoPage() {
 
   return (
     <>
-      < NextSeo {...SEO} />
+      < NextSeo {...SEO} 
+          openGraph={{
+            type: 'website',
+            url: 'https://www.polarisdata.es/servicios/pack-completo',
+            title: 'Polaris | Pack Completo',
+            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 12 meses de consultoría y masterclass',
+            images: [
+              {
+                url: '/illustrations/og-card.webp',
+                width: 1200,
+                height: 630,
+                alt: '',
+              }
+            ],
+        }}
+      />
       < PackCompleto />
     </>
   )

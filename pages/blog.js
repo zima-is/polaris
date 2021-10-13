@@ -37,7 +37,7 @@ const ArticulosPage = ({ posts }) => {
                 openGraph={{
                     type: 'website',
                     url: 'https://www.polarisdata.es/blog',
-                    title: 'Polaris Data | Blog',
+                    title: 'Polaris | Blog',
                     description: 'Información sobre estratégias de protección de datos y privacidad relevantes para tu empresa',
                     images: [
                       {

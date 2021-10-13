@@ -3,12 +3,35 @@ import Highlights from '../components/Highlights.js'
 import ContactoCyan from '../components/ContactoCyan.js'
 import Packs from '../components/Packs.js'
 
-import { LocalBusinessJsonLd } from 'next-seo'
+import { NextSeo, LocalBusinessJsonLd } from 'next-seo'
 import { LogoJsonLd } from 'next-seo'
  
 export default function Home() {
+
+  const SEO = {
+    title: 'Polaris | Blog',
+    description: 'Con el blog de Polaris podrás estar informado de estrategias de protección de datos y privaciad relevantes para tu empresa'
+  }
+
   return (
     <>
+      < NextSeo {...SEO} 
+          openGraph={{
+              type: 'website',
+              url: 'https://www.polarisdata.es',
+              title: 'Polaris',
+              description: 'Aportamos soluciones integrales en materia de Protección de Datos y Planes de Igualdad. Ayudamos a tu empresa a cumplir con el Reglamento de Protección de Datos RGPD',
+              images: [
+                {
+                  url: '/illustrations/og-card.webp',
+                  width: 1200,
+                  height: 630,
+                  alt: '',
+                }
+              ],
+          }}
+      />
+
       < LocalBusinessJsonLd
           type= 'ProfessionalService'
           id='http://www.polarisdata.es'

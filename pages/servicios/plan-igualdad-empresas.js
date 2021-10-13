@@ -17,7 +17,22 @@ const PlanIgualdad = () => {
 
     return (
         <>
-            < NextSeo {...SEO} />
+            < NextSeo {...SEO} 
+                    openGraph={{
+                    type: 'website',
+                    url: 'https://www.polarisdata.es/servicios/plan-igualdad-empresas',
+                    title: 'Polaris | Plan de Igualdad',
+                    description: 'Cumplimiento del Plan de Igualdad y mejoras del entorno laboral de tu empresa',
+                    images: [
+                        {
+                        url: '/illustrations/og-card.webp',
+                        width: 1200,
+                        height: 630,
+                        alt: '',
+                        }
+                    ],
+                }}
+            />
             <div className={styles.container}>
                 <div className={styles.headerIntro}>
                     <h1>
