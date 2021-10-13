@@ -24,7 +24,7 @@ const Hero = () => {
                        en dar soluciones derivadas de la <span className={styles.spanCyan}>experiencia</span> y el <span className={styles.spanCyan}> conocimiento.</span>
                     </p>
                     <div className={styles.illustration}>
-                        <Image src='/illustrations/conocenos.png' alt='' width={549} height={280} />
+                        <Image src='/illustrations/conocenos.png' alt='' width={549} height={280} priority={true} />
                     </div>
                 </div>
             </div>

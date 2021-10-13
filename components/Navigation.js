@@ -19,7 +19,7 @@ const Navigation = () => {
             <nav className={styles.navWrapper}>
 
                 <div className={styles.navHeader}>
-                    <Link href='/'><a><Image src='/illustrations/polaris-navy.png' alt='Ilustración del logo de Polaris' width={175} height={60.34} /></a></Link>
+                    <Link href='/'><a><Image src='/illustrations/polaris-navy.png' alt='Ilustración del logo de Polaris' width={175} height={60.34} priority={true} /></a></Link>
                     <div className={styles.iconToggleMenu} onClick={toggleMenu}>
                         {
                             menuState ?
