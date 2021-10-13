@@ -20,7 +20,7 @@ export default function Home() {
               type: 'website',
               url: 'https://www.polarisdata.es',
               title: 'Polaris',
-              description: 'Aportamos soluciones integrales en materia de Protección de Datos y Planes de Igualdad. Ayudamos a tu empresa a cumplir con el Reglamento de Protección de Datos RGPD',
+              description: 'Aportamos soluciones integrales en materia de Protección de Datos y Planes de Igualdad. Ayudamos a tu empresa a cumplir con el Reglamento de Protección de Datos RGPD.',
               images: [
                 {
                   url: '/illustrations/og-card.webp',

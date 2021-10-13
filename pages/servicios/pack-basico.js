@@ -16,7 +16,7 @@ export default function PackBasicoPage() {
             type: 'website',
             url: 'https://www.polarisdata.es/servicios/pack-basico',
             title: 'Polaris | Pack Básico',
-            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 6 meses de consultoría y masterclass',
+            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 6 meses de consultoría y masterclass.',
             images: [
               {
                 url: '/illustrations/og-card.webp',

@@ -16,7 +16,7 @@ export default function Legal() {
                     type: 'website',
                     url: 'https://www.polarisdata.es/dejanos-guiarte',
                     title: 'Polaris | Legal',
-                    description: 'Aviso Legal, Política de Privacidad y Política de Cookies de Polaris',
+                    description: 'Aviso Legal, Política de Privacidad y Política de Cookies de Polaris.',
                     images: [
                         {
                         url: '/illustrations/og-card.webp',

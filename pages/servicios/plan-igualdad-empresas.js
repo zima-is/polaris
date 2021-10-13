@@ -22,7 +22,7 @@ const PlanIgualdad = () => {
                     type: 'website',
                     url: 'https://www.polarisdata.es/servicios/plan-igualdad-empresas',
                     title: 'Polaris | Plan de Igualdad',
-                    description: 'Cumplimiento del Plan de Igualdad y mejoras del entorno laboral de tu empresa',
+                    description: 'Cumplimiento del Plan de Igualdad y mejoras del entorno laboral de tu empresa.',
                     images: [
                         {
                         url: '/illustrations/og-card.webp',

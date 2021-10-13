@@ -16,7 +16,7 @@ export default function PackCompletoPage() {
             type: 'website',
             url: 'https://www.polarisdata.es/servicios/pack-completo',
             title: 'Polaris | Pack Completo',
-            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 12 meses de consultoría y masterclass',
+            description: 'Cumplimiento del Reglamento de Protección de Datos RGPD, 12 meses de consultoría y masterclass.',
             images: [
               {
                 url: '/illustrations/og-card.webp',

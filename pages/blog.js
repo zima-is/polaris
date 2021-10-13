@@ -38,7 +38,7 @@ const ArticulosPage = ({ posts }) => {
                     type: 'website',
                     url: 'https://www.polarisdata.es/blog',
                     title: 'Polaris | Blog',
-                    description: 'Información sobre estratégias de protección de datos y privacidad relevantes para tu empresa',
+                    description: 'Información sobre estratégias de protección de datos y privacidad relevantes para tu empresa.',
                     images: [
                       {
                         url: '/illustrations/og-card.webp',

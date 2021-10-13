@@ -18,7 +18,7 @@ const DejanosGuiartePage = () => {
                     type: 'website',
                     url: 'https://www.polarisdata.es/dejanos-guiarte',
                     title: 'Polaris | Contacto',
-                    description: 'Profesionales de Polaris contestarán todas las consultas que nos hagas llegar',
+                    description: 'Profesionales de Polaris contestarán todas las consultas que nos hagas llegar.',
                     images: [
                         {
                         url: '/illustrations/og-card.webp',

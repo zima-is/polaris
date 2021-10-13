@@ -18,7 +18,7 @@ export default function ConocenosPage() {
             type: 'website',
             url: 'https://www.polarisdata.es/conocenos',
             title: 'Polaris | Conócenos',
-            description: 'Conoce nuestro equipo de profesionales con más de 30 años de experiencia',
+            description: 'Conoce nuestro equipo de profesionales con más de 30 años de experiencia.',
             images: [
               {
                 url: '/illustrations/og-card.webp',
