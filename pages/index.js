@@ -9,8 +9,8 @@ import { LogoJsonLd } from 'next-seo'
 export default function Home() {
 
   const SEO = {
-    title: 'Polaris | Blog',
-    description: 'Con el blog de Polaris podrás estar informado de estrategias de protección de datos y privaciad relevantes para tu empresa'
+    title: 'Polaris',
+    description: 'Aportamos soluciones integrales en materia de Protección de Datos y Planes de Igualdad. Ayudamos a tu empresa a cumplir con el Reglamento de Protección de Datos RGPD.'
   }
 
   return (
